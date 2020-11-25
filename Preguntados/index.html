@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Mis estilos-->
+    <link rel="stylesheet" href="css/styles-juego.css">
+    <title>Respuesta Correcta</title>
+</head>
+
+<body>
+    <!--Barra de Menu-->
+    <nav>
+        <div class="cont-logo">
+            <img src="images/logo-juego.png" alt="Logo">
+        </div>
+        <div class="cont-respuestas">
+            <div class="circulo-respuesta" id="check-1"></div>
+            <div class="circulo-respuesta" id="check-2"></div>
+            <div class="circulo-respuesta" id="check-3"></div>
+            <div class="circulo-respuesta" id="check-4"></div>
+            <div class="circulo-respuesta" id="check-5"></div>
+            <div class="circulo-respuesta" id="check-6"></div>
+        </div>
+    </nav>
+    <section>
+        <div class="cont-box">
+
+            <!--Box de inicio-->
+            <div class="box" id="inicio">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-inicio-v.png">
+                        <img src="images/box-img-inicio-h.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2>¿Qué tanto conoces sobre la discapacidad?</h2>
+                        </div>
+                        <div>
+                            <p class="text">¿Sabias que...? La discapacidad no es una enfermedad sino una condición, aprendamos mientras juegamos, ¿estas listo?</p>
+                        </div>
+                        <div>
+                            <button type="button" onclick="comenzar()"> Comenzar Juego</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Pregunta 1-->
+            <div class="box" id="Pregunta-1">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-1-v.png">
+                        <img src="images/box-img-1-h.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2>La discapacidad es...</h2>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta1(1)" id="res-1">...Una limitación física o mental</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta1(2)" class="incorrect-1">...Estar enfermo</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta1(3)" class="incorrect-1">...No pensar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Pregunta 2-->
+            <div class="box" id="Pregunta-2">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-2-v.png">
+                        <img src="images/box-img-2-h.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2>Las limitaciones en las habilidades para aprender es...</h2>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta2(1)" class="incorrect-2">Discapacidad visual</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta2(2)" class="incorrect-2">Discapacidad auditiva</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta2(3)" id="res-2">Discapacidad intelectual</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Pregunta 3-->
+            <div class="box" id="Pregunta-3">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-3-v.png">
+                        <img src="images/box-img-3-h.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2>¿Cuál es el sistema de escritura que utilizan las personas ciegas?</h2>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta3(1)" class="incorrect-3">Sistema de letras y numeros</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta3(2)" id="res-3">Braille</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta3(3)" class="incorrect-3">Puntitos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Pregunta 4-->
+            <div class="box" id="Pregunta-4">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-4-v.png">
+                        <img src="images/box-img-4-h.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2>Observa la imagen. Es una discapacidad...</h2>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta4(1)" class="incorrect-4">Auditiva</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta4(2)" id="res-4">Motriz</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta4(3)" class="incorrect-4">Intelectual</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Pregunta 5-->
+            <div class="box" id="Pregunta-5">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-5-h.png">
+                        <img src="images/box-img-5-h-1.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2>Las personas sordas se comunican por medio de...</h2>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta5(1)" class="incorrect-5">Dibujos</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta5(2)" class="incorrect-5">No se comunican</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta5(3)" id="res-5">Lengua de Señas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Pregunta 6-->
+            <div class="box" id="Pregunta-6">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-6-h.png">
+                        <img src="images/box-img-6-v.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2>¿Qué debemos hacer para incluir a una persona con discapacidad en nuestra escuela?</h2>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta6(1)" id="res-6">Ayudarlo a participar en las actividades</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta6(2)" class="incorrect-6">Burlarse si le pasa algo</button>
+                        </div>
+                        <div>
+                            <button type="button" onclick="pregunta6(3)" class="incorrect-6">Dejarlo sentado para que nada le pase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Resultado-->
+            <div class="box" id="resultado">
+                <div class="box-img">
+                    <picture>
+                        <source media="(min-width: 880px)" srcset="images/box-img-resultados-v.png">
+                        <img id="img-resultado" src="images/box-img-resultados-h.png" alt="background">
+                    </picture>
+                </div>
+                <div class="box-cont">
+                    <div>
+                        <div>
+                            <h2 id="titulo-resultado">Tu Resultado</h2>
+                        </div>
+                        <div>
+                            <p class="text" id="texto-resultado">Texto correspndiente al puntaje</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <picture>
+            <source media="(min-width: 769px)" srcset="images/Desktop.png">
+            <source media="(min-width: 426px)" srcset="images/Tablet.png">
+            <img src="images/Mobile.png" alt="background">
+        </picture>
+    </section>
+
+    <script src="js/juego.js"></script>
+</body>
+
+</html>
