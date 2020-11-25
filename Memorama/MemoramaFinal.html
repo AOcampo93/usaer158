@@ -1,0 +1,396 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <style>
+            body{
+                width: 100%;
+                font-family: sans-serif;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+								background: #a8f0ed;
+
+            }
+            main{
+                width: 100%;
+                max-width: 850px;
+                padding: 10px;
+                margin-top: 50px;
+                border: 3px solid grey;
+								background: #cad1d1;
+            }
+            .Fila{
+                width: 100%;
+                max-width: 800px;
+                display: flex;
+                }
+            .Container{
+                width: 100%;
+                display:flex;
+                margin: 15px;
+                }
+            .carta{
+              width:170px;
+              height:190px;
+              padding: 5px;
+              border: 1px solid #323232;
+              -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+              background: #7ccccc;
+              color: #323232;
+              text-align: center;
+              font-size:11pt;
+              display:flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .tapa{
+              width:170px;
+              height:190px;
+              background: #a8f0ed;
+              position:absolute;
+              color: #323232;
+              text-align: center;
+              line-height: 200px;
+              font-size: 14pt;
+              padding: 5px;
+              border: 1px solid #323232;
+              -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+            }
+            h1{
+                text-align: center;
+                font-size: 18pt;
+                color: #323232;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+        </style>
+	</head>
+	<body>
+       <main>
+           <h1>"Memorama Sobre Discapacidad"<br>Encuentra el par de cada tarjeta. Cuando termines platica sobre lo que representa cada imagen.</div></h1>
+           <div class="Fila">
+            <div class="Container">
+                <div id="mostrar1" class="carta" onclick="ShowHide1()">
+									<img src="imagenes/Tarjeta1.png" alt="">
+								</div>
+                <div id="Tarjeta1" class="tapa" onclick="YoSoy1()">Tarjeta 1</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar2" class="carta" onclick="ShowHide2()">
+									<img src="imagenes/Tarjeta2.png" alt="">
+								</div>
+                <div id="Tarjeta2" class="tapa" onclick="YoSoy2()">Tarjeta 2</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar3" class="carta" onclick="ShowHide3()">
+										<img src="imagenes/Tarjeta3.png" alt="">
+								</div>
+                <div id="Tarjeta3" class="tapa" onclick="YoSoy3()">Tarjeta 3</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar4" class="carta" onclick="ShowHide4()">
+									<img src="imagenes/Tarjeta4.png" alt="">
+									</div>
+                <div id="Tarjeta4" class="tapa" onclick="YoSoy4()">Tarjeta 4</div>
+            </div>
+          </div>
+
+          <div class="Fila">
+            <div class="Container">
+                <div id="mostrar5" class="carta" onclick="ShowHide5()">
+									<img src="imagenes/Tarjeta3.png" alt="">
+									</div>
+                <div id="Tarjeta5" class="tapa" onclick="YoSoy5()">Tarjeta 5</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar6" class="carta" onclick="ShowHide6()">
+									<img src="imagenes/Tarjeta1.png" alt="">
+									</div>
+                <div id="Tarjeta6" class="tapa" onclick="YoSoy6()">Tarjeta 6</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar7" class="carta" onclick="ShowHide7()">
+									<img src="imagenes/Tarjeta6.png" alt="">
+									</div>
+                <div id="Tarjeta7" class="tapa" onclick="YoSoy7()">Tarjeta 7</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar8" class="carta" onclick="ShowHide8()">
+									<img src="imagenes/Tarjeta5.png" alt="">
+									</div>
+                <div id="Tarjeta8" class="tapa" onclick="YoSoy8()">Tarjeta 8</div>
+            </div>
+          </div>
+
+          <div class="Fila">
+            <div class="Container">
+                <div id="mostrar9" class="carta" onclick="ShowHide9()">
+									<img src="imagenes/Tarjeta4.png" alt="">
+									</div>
+                <div id="Tarjeta9" class="tapa" onclick="YoSoy9()">Tarjeta 9</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar10" class="carta" onclick="ShowHide10()">
+									<img src="imagenes/Tarjeta2.png" alt="">
+									</div>
+                <div id="Tarjeta10" class="tapa" onclick="YoSoy10()">Tarjeta 10</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar11" class="carta" onclick="ShowHide11()">
+									<img src="imagenes/Tarjeta5.png" alt="">
+									</div>
+                <div id="Tarjeta11" class="tapa" onclick="YoSoy11()">Tarjeta 11</div>
+            </div>
+           <div class="Container">
+                <div id="mostrar12" class="carta" onclick="ShowHide12()">
+									<img src="imagenes/Tarjeta6.png" alt="">
+									</div>
+                <div id="Tarjeta12" class="tapa" onclick="YoSoy12()">Tarjeta 12</div>
+            </div>
+          </div>
+       </main>
+    </div>
+	</body>
+
+    <script>
+        //Tarjeta 1
+        function YoSoy1() {
+            var x = document.getElementById("Tarjeta1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide1() {
+            var x = document.getElementById("Tarjeta1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 2
+                function YoSoy2() {
+            var x = document.getElementById("Tarjeta2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide2() {
+            var x = document.getElementById("Tarjeta2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+        //Tarjeta 3
+                function YoSoy3() {
+            var x = document.getElementById("Tarjeta3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide3() {
+            var x = document.getElementById("Tarjeta3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+        //Tarjeta 4
+        function YoSoy4() {
+            var x = document.getElementById("Tarjeta4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide4() {
+            var x = document.getElementById("Tarjeta4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+        //Tarjeta 5
+        function YoSoy5() {
+            var x = document.getElementById("Tarjeta5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide5() {
+            var x = document.getElementById("Tarjeta5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 6
+        function YoSoy6() {
+            var x = document.getElementById("Tarjeta6");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide6() {
+            var x = document.getElementById("Tarjeta6");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 7
+        function YoSoy7() {
+            var x = document.getElementById("Tarjeta7");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide7() {
+            var x = document.getElementById("Tarjeta7");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 8
+        function YoSoy8() {
+            var x = document.getElementById("Tarjeta8");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide8() {
+            var x = document.getElementById("Tarjeta8");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 9
+        function YoSoy9() {
+            var x = document.getElementById("Tarjeta9");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide9() {
+            var x = document.getElementById("Tarjeta9");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 10
+        function YoSoy10() {
+            var x = document.getElementById("Tarjeta10");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide10() {
+            var x = document.getElementById("Tarjeta10");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 11
+        function YoSoy11() {
+            var x = document.getElementById("Tarjeta11");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide11() {
+            var x = document.getElementById("Tarjeta11");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //Tarjeta 12
+        function YoSoy12() {
+            var x = document.getElementById("Tarjeta12");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowHide12() {
+            var x = document.getElementById("Tarjeta12");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</html>
